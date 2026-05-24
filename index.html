@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+  <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>トレログ - 法的情報</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+        background: #f8fafc;
+        color: #0f172a;
+        line-height: 1.7;
+      }
+      header {
+        background: #2563eb;
+        color: #fff;
+        padding: 24px 20px;
+        text-align: center;
+      }
+      header h1 { font-size: 24px; font-weight: 800; letter-spacing: -0.5px; }
+      header p  { font-size: 14px; opacity: 0.85; margin-top: 4px; }
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        background: #1d4ed8;
+        padding: 12px 20px;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 8px 20px;
+        border-radius: 20px;
+        border: 2px solid rgba(255,255,255,0.4);
+        transition: background 0.2s;
+      }
+      nav a:hover, nav a.active { background: rgba(255,255,255,0.2); }
+      .container {
+        max-width: 720px;
+        margin: 32px auto;
+        padding: 0 20px 60px;
+      }
+      .card {
+        background: #fff;
+        border-radius: 16px;
+        padding: 32px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      }
+      .updated {
+        font-size: 12px;
+        color: #64748b;
+        margin-bottom: 24px;
+      }
+      .section { margin-bottom: 28px; }
+      .section h2 {
+        font-size: 15px;
+        font-weight: 800;
+        color: #0f172a;
+        margin-bottom: 10px;
+        padding-bottom: 6px;
+        border-bottom: 2px solid #eff6ff;
+      }
+      .section p {
+        font-size: 14px;
+        color: #475569;
+        white-space: pre-line;
+      }
+      .contact-box {
+        background: #eff6ff;
+        border-radius: 10px;
+        padding: 16px 20px;
+        margin-top: 8px;
+      }
+      .contact-box p { color: #1d4ed8; font-weight: 600; }
+      footer {
+        text-align: center;
+        font-size: 12px;
+        color: #94a3b8;
+        padding: 24px;
+      }
+      .page { display: none; }
+      .page.active { display: block; }
+    </style>
+  </head>
+  <body>
+
+  <header>
+    <h1>トレログ</h1>
+    <p>法的情報 / Legal Information</p>
+  </header>
+
+  <nav>
+    <a href="#" class="active" onclick="show('privacy', this)">プライバシーポリシー</a>
+    <a href="#" onclick="show('terms', this)">利用規約</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- プライバシーポリシー -->
+    <div id="privacy" class="card page active">
+      <p class="updated">最終更新日: 2025年1月</p>
+
+      <div class="section">
+        <p>トレログ（以下「本アプリ」）をご利用いただきありがとうございます。本プライバシーポリシーは、開発者・浅井悠吾
+  （Advent）が提供する本アプリが取り扱う情報とその管理方法についてご説明します。</p>
+      </div>
+
+      <div class="section">
+        <h2>1. 収集する情報</h2>
+        <p>本アプリは以下の情報をお客様のデバイス内にのみ保存します。これらの情報は外部サーバーへ一切送信されません。
+
+  ・ニックネーム（任意）
+  ・性別・年齢・身長・体重・目標体重（任意）
+  ・トレーニング目標
+  ・トレーニング記録（種目・重量・セット数・日時など）
+  ・自己ベスト（PB）記録
+  ・バッジ取得履歴
+  ・アプリ設定（テーマカラー、通知設定など）</p>
+      </div>
+
+      <div class="section">
+        <h2>2. 情報の利用目的</h2>
+        <p>収集した情報は以下の目的にのみ使用します。
+
+  ・トレーニングの記録・管理・分析
+  ・週間プランの自動生成・提案
+  ・自己ベスト・バッジの管理
+  ・パーソナライズされたアドバイスの提供
+  ・アプリ設定の保存・復元</p>
+      </div>
+
+      <div class="section">
+        <h2>3. 情報の共有・送信</h2>
+        <p>本アプリはお客様の情報を第三者と共有しません。すべてのデータはお使いのデバイスのローカルストレージ（AsyncStor
+  age）にのみ保存されます。
+
+  「データをエクスポート」機能はお客様が任意でデータを外部に出力するためのものです。どこに送信するかはお客様自身が決定し
+  ます。</p>
+      </div>
+
+      <div class="section">
+        <h2>4. プッシュ通知</h2>
+        <p>リマインダー通知機能を有効にした場合、デバイスのローカル通知機能を使用します。プッシュ通知サービスへの接続は
+  行いません。</p>
+      </div>
+
+      <div class="section">
+        <h2>5. データの削除</h2>
+        <p>「プロフィール設定 → データ管理 → すべてのデータを削除」から、いつでもすべての保存データを削除できます。アプ
+  リをアンインストールすることでもデータは完全に削除されます。</p>
+      </div>
+
+      <div class="section">
+        <h2>6. お子様のプライバシー</h2>
+        <p>本アプリは13歳未満のお子様を対象としていません。13歳未満の方の情報を意図的に収集することはありません。</p>
+      </div>
+
+      <div class="section">
+        <h2>7. ポリシーの変更</h2>
+        <p>本ポリシーは予告なく改訂される場合があります。重要な変更がある場合はアプリ内にてお知らせします。</p>
+      </div>
+
+      <div class="section">
+        <h2>8. お問い合わせ</h2>
+        <p>プライバシーポリシーに関するご質問、またはデータの削除・開示リクエストは下記までお問い合わせください。</p>
+        <div class="contact-box">
+          <p>開発者: 浅井悠吾（Advent）</p>
+          <p>メール: advent0500@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 利用規約 -->
+    <div id="terms" class="card page">
+      <p class="updated">最終更新日: 2025年1月</p>
+
+      <div class="section">
+        <p>本利用規約（以下「本規約」）は、浅井悠吾（Advent、以下「開発者」）が提供するトレログ（以下「本アプリ」）のご
+  利用に際して適用されます。本アプリをご利用いただくことで、本規約に同意したものとみなします。</p>
+      </div>
+
+      <div class="section">
+        <h2>1. サービスの概要</h2>
+        <p>本アプリは個人のフィットネス・トレーニング管理を目的としたアプリケーションです。トレーニング記録・週間プラン
+  の管理・自己ベストの追跡などの機能を提供します。</p>
+      </div>
+
+      <div class="section">
+        <h2>2. 医療・健康に関する免責事項</h2>
+        <p>本アプリが提供するトレーニングプログラム・情報・アドバイスは、医療行為・リハビリテーション・専門的なトレーニ
+  ング指導の代替となるものではありません。
+
+  トレーニングを開始する前に、持病・怪我・健康上の懸念がある場合は、必ず医師または専門家にご相談ください。本アプリの利用
+  によって生じた怪我・健康上の問題について、開発者は一切の責任を負いません。</p>
+      </div>
+
+      <div class="section">
+        <h2>3. 自己責任</h2>
+        <p>本アプリの利用、および生成されたトレーニングプランの実施は、すべてお客様ご自身の判断と責任において行ってくだ
+  さい。体に異変を感じた場合はすぐにトレーニングを中止してください。</p>
+      </div>
+
+      <div class="section">
+        <h2>4. 禁止事項</h2>
+        <p>本アプリを以下の目的に使用することを禁止します。
+
+  ・法令または公序良俗に反する行為
+  ・本アプリの改ざん・リバースエンジニアリング
+  ・その他、開発者が不適切と判断する行為</p>
+      </div>
+
+      <div class="section">
+        <h2>5. 知的財産権</h2>
+        <p>本アプリに含まれるすべてのコンテンツ（テキスト・デザイン・ロゴ・コード等）の知的財産権は開発者に帰属します。
+  無断での複製・転用を禁じます。</p>
+      </div>
+
+      <div class="section">
+        <h2>6. サービスの変更・終了</h2>
+
+  <p>開発者は事前の通知なく、本アプリのサービス内容の変更・機能の追加や削除・サービスの終了を行う場合があります。</p>
+      </div>
+
+      <div class="section">
+        <h2>7. 免責事項</h2>
+        <p>本アプリは「現状のまま」提供されます。開発者は本アプリの正確性・有用性・可用性・特定目的への適合性について一
+  切保証しません。本アプリの利用により生じた直接的・間接的損害について、開発者は責任を負いません。</p>
+      </div>
+
+      <div class="section">
+        <h2>8. 準拠法・管轄</h2>
+        <p>本規約は日本法に準拠します。本規約に関する紛争については、大阪地方裁判所を第一審の専属的合意管轄裁判所としま
+  す。</p>
+      </div>
+
+      <div class="section">
+        <h2>9. 規約の変更</h2>
+        <p>本規約は予告なく変更される場合があります。変更後も本アプリを継続してご利用いただいた場合、変更後の規約に同意
+  したものとみなします。</p>
+      </div>
+
+      <div class="section">
+        <h2>10. お問い合わせ</h2>
+        <p>本規約に関するご質問は下記までお問い合わせください。</p>
+        <div class="contact-box">
+          <p>開発者: 浅井悠吾（Advent）</p>
+          <p>メール: advent0500@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Advent / 浅井悠吾. All rights reserved.
+  </footer>
+
+  <script>
+    function show(id, el) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      el.classList.add('active');
+      return false;
+    }
+  </script>
+
+  </body>
+  </html>
